@@ -12,6 +12,8 @@
 		F00166ED1D07A27C00377E1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00166EB1D07A27C00377E1F /* Main.storyboard */; };
 		F00166EF1D07A27C00377E1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F00166EE1D07A27C00377E1F /* Assets.xcassets */; };
 		F00166F21D07A27C00377E1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F00166F01D07A27C00377E1F /* LaunchScreen.storyboard */; };
+		F08225531D1098F900A259F6 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08225521D1098F900A259F6 /* FactModel.swift */; };
+		F0B595901D10C2540040581D /* ColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B5958F1D10C2540040581D /* ColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		F00166EE1D07A27C00377E1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F00166F11D07A27C00377E1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F00166F31D07A27C00377E1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F08225521D1098F900A259F6 /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		F0B5958F1D10C2540040581D /* ColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +60,12 @@
 			children = (
 				F00166E71D07A27C00377E1F /* AppDelegate.swift */,
 				F00166E91D07A27C00377E1F /* ViewController.swift */,
+				F08225521D1098F900A259F6 /* FactModel.swift */,
 				F00166EB1D07A27C00377E1F /* Main.storyboard */,
 				F00166EE1D07A27C00377E1F /* Assets.xcassets */,
 				F00166F01D07A27C00377E1F /* LaunchScreen.storyboard */,
 				F00166F31D07A27C00377E1F /* Info.plist */,
+				F0B5958F1D10C2540040581D /* ColorModel.swift */,
 			);
 			path = FunFacts;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					F00166E31D07A27C00377E1F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9MD5TLEWD4;
 					};
 				};
 			};
@@ -135,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08225531D1098F900A259F6 /* FactModel.swift in Sources */,
 				F00166EA1D07A27C00377E1F /* ViewController.swift in Sources */,
 				F00166E81D07A27C00377E1F /* AppDelegate.swift in Sources */,
+				F0B595901D10C2540040581D /* ColorModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alitdiamond.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alitdiamond.FunFacts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +301,7 @@
 				F00166F81D07A27C00377E1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
